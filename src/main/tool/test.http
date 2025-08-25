@@ -1,0 +1,33 @@
+
+
+### register
+POST http://localhost:8080/auth/register
+Content-Type: application/x-www-form-urlencoded
+
+email=test2@example.com&password=mypassword
+
+### login
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+  "email": "test2@example.com",
+  "password": "mypasswor"
+}
+
+
+### magic-link/
+POST http://localhost:8080/auth/magiclink/request
+Content-Type: application/json
+
+{
+  "email": "kenny99@example.com"
+}
+
+### login
+POST http://localhost:8080/auth/magic/login
+Content-Type: application/json
+
+{
+  "token": "RbE25po7zGsdUQ5hOlf9cmqHsNDYzP3JlHU4ek4_chI"
+}
